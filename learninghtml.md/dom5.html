@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <h3> Basic Calculator </h3>
+  <form>
+    <div class="container">
+      <div class="row container">
+        <div class="col-sm-12"  >
+          input: <input id="input1" type="string" value=""> </input>
+         <br><br>
+       </div>
+
+       <div class="col-sm-12"  >
+         result: <input id="input2" type="string" value=""> </input>
+        <br><br>
+      </div>
+      </div>
+      <br>
+        <div class="row container">
+          <div class="col-sm-4"  >
+            <button  type="button"  onclick="addFunction()">+</button>
+            <br><br>
+          </div>
+          <div class="col-sm-4"  >
+            <button  type="button"  onclick="subFunction()">-</button>
+            <br><br>
+          </div>
+          <div class="col-sm-4"  >
+            <button  type="reset" >CE</button>
+          </div>
+        </div>
+      <br>
+        <div class="row container">
+          <div class="col-sm-4"  >
+            <button  type="button"  onclick="mulFunction()">*</button>
+            <br><br>
+          </div>
+          <div class="col-sm-4"  >
+            <button  type="button"  onclick="divFunction()">/</button>
+            <br><br>
+          </div>
+          <div class="col-sm-4"  >
+            <button id="equal" type="button" onclick="equalFunction()">=</button>
+          </div>
+        </div>
+    </div>
+  </form>
+  <script>
+     const addFunction = () => {
+      document.getElementById('input1').value =  document.getElementById('input1').value + '+';
+      console.log(document.getElementById('input1').value);
+     }
+
+     console.log(document.getElementById('input1').value);
+     const subFunction = () => {
+       // document.getElementById('input1').value =  document.getElementById('input1').value - '-';
+       // console.log(document.getElementById('input1').value);
+ 
+     }
+     // console.log(document.getElementById('input1').value);
+     const mulFunction = () => {
+       const input1 = document.getElementById('mul').value;
+
+     }
+     const divFunction = () => {
+       const input1 = document.getElementById('div').value;
+
+     }
+     const equalFunction = () => {
+       const input = document.getElementById('input1').value;  // '2+3'
+
+       const inputArray = input.split('+');
+       console.log(inputArray)
+       let result = 0;
+       for (let i=0; i<inputArray.length; i++){
+         result = parseInt(inputArray[i])+result
+
+       }
+       // const sum = parseInt(inputArray[i]) + parseInt(inputArray[1]);
+       document.getElementById('result').value = result;
+     }
+  </script>
+</body>
+</html>
+
+
+
+<!--
+ style="background-color:#FC3"
+style="background-color:#FC9" -->

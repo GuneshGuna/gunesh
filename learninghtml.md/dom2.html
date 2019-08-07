@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h2>HTML Forms</h2>
+
+  <form>
+    sentence: <input id="sentence" type="text" value=""> </input>
+   <br><br>
+   <button type="button"  onclick="myFunction()">longestword</button>
+   <br><br>
+  </form>
+  <script>
+    const myFunction = () => {
+        const sentence = document.getElementById('sentence').value
+      const mysentence = sentence.split(" ");
+      let longestwordlength= 0;
+      let longestword = '';
+      let index = 0;
+      for (let i=0; i<mysentence.length; i++){
+        if(mysentence[i].length > longestwordlength){
+          longestwordlength = mysentence[i].length;
+          index=i;
+          longestword = mysentence[i];
+        }
+      }
+
+          alert(longestword);
+
+    }
+
+  </script>
+</body>
+</html>

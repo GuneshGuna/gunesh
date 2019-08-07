@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  </style>
+</head>
+<body>
+  <form>
+    input1: <input id="input1" type="number" value=""> </input>
+   <br><br>
+   input2: <input id="input2" type="number" value=""> </input>
+  <br><br>
+   <button type="button"  onclick="addFunction()">+</button>
+   <br><br>
+   <button type="button"  onclick="subFunction()">-</button>
+   <br><br>
+   <button type="button"  onclick="divFunction()">/</button>
+   <br><br>
+   <button type="button"  onclick="mulFunction()">*</button>
+   <br><br>
+   <button type="button"  onclick="powerFunction()">power</button>
+   <br><br>
+   result: <span id='result'> </span>
+   <script>
+
+   const addFunction = () => {
+     const input1 = document.getElementById('input1').value;
+     const input2 = document.getElementById('input2').value;
+     const integerNum1 = parseFloat(input1);
+     const integerNum2 = parseFloat(input2);
+     const result = Math.abs(integerNum1 + integerNum2);
+     const resultElement = document.getElementById('result');
+     resultElement.innerHTML = result;
+     // alert(result);
+   }
+   const subFunction = () => {
+     const input1 = document.getElementById('input1').value;
+     const input2 = document.getElementById('input2').value;
+     const integerNum1 = parseFloat(input1);
+     const integerNum2 = parseFloat(input2);
+     const result = Math.abs(integerNum1 - integerNum2 );
+     const resultElement = document.getElementById('result');
+     resultElement.innerHTML = result;
+       // alert(result)
+   }
+   const divFunction = () => {
+     const input1 = document.getElementById('input1').value;
+     const input2 = document.getElementById('input2').value;
+     const result = input1 / input2;
+     const resultElement = document.getElementById('result');
+     resultElement.innerHTML = result;
+     // alert(result)
+   }
+   const mulFunction = () => {
+     const input1 = document.getElementById('input1').value;
+     const input2 = document.getElementById('input2').value;
+     const result = input1 * input2;
+     const resultElement = document.getElementById('result');
+     resultElement.innerHTML = result;
+     // alert(result)
+   }
+   const powerFunction = () => {
+     const input1 =  document.getElementById("input1").value;
+      const input2 =  document.getElementById("input2").value;
+      const result = Math.pow(input1,input2);
+      const resultElement = document.getElementById('result');
+      resultElement.innerHTML = result;
+      // alert(result)
+   }
+
+   </script>
+  </form>
+
+</body>
+</html>

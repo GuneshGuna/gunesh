@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form>
+   num1: <input id="num1" type="number" value=""> </input>
+  <br><br>
+   num2: <input id="num2" type="number" value=""> </input>
+  <br><br>
+  <button type="button"  onclick="addFunction()">add</button>
+  <br><br>
+  <button type="button"  onclick="subFunction()">Sub</button>
+  <br><br>
+  <button type="button"  onclick="mulFunction()">mul</button>
+  <br><br>
+  <script>
+  const addFunction = () => {
+    const num1 = document.getElementById('num1').value;
+    const num2 = document.getElementById('num2').value;
+    const integerNum1 = parseFloat(num1);
+    const integerNum2 = parseFloat(num2);
+    const result = (integerNum1 + integerNum2);
+
+    alert(result);
+  }
+  const subFunction = () => {
+    const num1 = document.getElementById('num1').value;
+    const num2 = document.getElementById('num2').value;
+    const result = num1 - num2;
+      alert(result)
+  }
+  const mulFunction = () => {
+    const num1 = document.getElementById('num1').value;
+    const num2 = document.getElementById('num2').value;
+    const result = num1 * num2;
+
+  }
+
+
+  </script>
+</form>
+</body>
+</html>
