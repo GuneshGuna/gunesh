@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Striped Rows</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th>row1</th>
+        <th>row2</th>
+        <th>row3</th>
+        <th>row4</th>
+        <th>row5</th>
+        <th>row6</th>
+        <th>row7</th>
+        <th>row8</th>
+        <th>row9</th>
+        <th>row10</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>column1</td>
+      </tr>
+      <tr>
+        <td>Column2</td>
+      </tr>
+      <tr>
+        <td>Column3</td>
+      </tr>
+      <tr>
+        <td>column4</td>
+      </tr>
+      <tr>
+        <td>column5</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+<body>
+<div class="container">
+  <th></th>
+
+<div class="row">
+  <div class="column">
+    <h1>image1</h1>
+  <img src="image.jpg" class="img-circle" alt="Cinque Terre" width="304" height="100">
+</div>
+<div class="container">
+  <div class="column">
+    <h1>image2</h1>
+  <img src="image2.png" class="img-circle" alt="Cinque Terre" width="304" height="100">
+</div>
+<div class="container">
+  <div class="column">
+    <h1>image3</h1>
+  <img src="image3.JPG" class="img-circle" alt="Cinque Terre" width="304" height="100">
+</div>
+</body>
+<body>
+<div class="container">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn">Basic</button>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>
+</div>
+</body>
+<body>
+
+<div class="container">
+  <h2>Inline form</h2>
+  <form class="form-inline" action="/action_page.php">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<div class="container">
+  <h2>Dropdowns</h2>
+  <p>Add the .dropdown-menu-right class to .dropdown-menu to right-align the dropdown menu:</p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">kerala</a></li>
+      <li><a href="#">Chandigarh</a></li>
+      <li><a href="#">goa</a></li>
+        <li><a href="#">lakashadweep</a></li>
+          <li><a href="#">delhi</a></li>
+            <li><a href="#">andaman and nicobar islands</a></li>
+              <li><a href="#">puducherry</a></li>
+                <li><a href="#">punjab</a></li>
+                  <li><a href="#">himachal pradesh</a></li>
+                    <li><a href="#">sikkim</a></li>
+                      <li><a href="#">tamil nadu</a></li>
+                        <li><a href="#">daman and diu</a></li>
+                          <li><a href="#">harayana</a></li>
+                            <li><a href="#">mizoram</a></li>
+                              <li><a href="#">manipur</a></li>
+                                <li><a href="#">jammu and kashmir</a></li>
+                                  <li><a href="#">karnataka</a></li>
+                                    <li><a href="#">uttarakhand</a></li>
+                                      <li><a href="#">nagaland</a></li>
+                                        <li><a href="#">gujarat</a></li>
+                                          <li><a href="#">telangana</a></li>
+                                            <li><a href="#">dadra and nagar haveli</a></li>
+                                              <li><a href="#">arunachal pradesh</a></li>
+                                                <li><a href="#">tripura</a></li>
+                                                  <li><a href="#">meghalaya</a></li>
+                                                    <li><a href="#">andhra pradesh</a></li>
+                                                      <li><a href="#">maharasthra</a></li>
+                                                        <li><a href="#">west bengal</a></li>
+                                                          <li><a href="#">assam</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+</div>
+<select>
+<option value="value1"> value1</option>
+<option value="value2"> value2</option>
+
+<option value="value3">value3</option>
+
+</select>
+
+
+</body>
+</html>

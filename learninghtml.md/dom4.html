@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<p> Check out form </p>
+<form>
+  <div class="container">
+    <div class="row container">
+      <div class="col-sm-6">
+        <p><a href="#">Product 1</a></p><br>
+          <p><a href="#">Product 2</a></p><br>
+            <p><a href="#">Product 3</a></p><br>
+              <p><a href="#">Product 4</a></p><br>
+                <p><a href="#">Product 5</a></p><br>
+                <hr>
+                <p>TOTAL:<span id='TOTAL'></span>
+      </div>
+      <div class="col-sm-6">
+        <ul>
+          <li>$: <input id="product1" type="number" value=""> </input></li><br>
+            <li>$: <input id="product2" type="number" value=""> </input></li><br>
+              <li>$: <input id="product3" type="number" value=""> </input></li><br>
+                <li>$: <input id="product4" type="number" value=""> </input></li><br>
+                  <li>$: <input id="product5" type="number" value=""> </input></li><br>
+        </ul><br>
+          <!-- <hr>
+          <button id="buttton" type="button"  onclick="addFunction()">$</button>
+          <br><br> -->
+      </div>
+    </div>
+  </div>
+</form>
+<script>
+let p1 = 0;
+let p2 = 0;
+let p3 = 0;
+let p4 = 0;
+let p5 = 0;
+const calculate = () => {
+  const resultElement = document.getElementById('TOTAL');
+  const result = p1 + p2 + p3 + p4 + p5;
+  resultElement.innerHTML = result;
+}
+const addFunction1 = () => {
+    const product1 = document.getElementById('product1').value;
+    p1 = parseFloat(product1);
+    calculate();
+
+}
+const addFunction2 = () => {
+    const product2 = document.getElementById('product2').value;
+    p2 = parseFloat(product2);
+    calculate();
+
+
+}
+const addFunction3 = () => {
+    const product3 = document.getElementById('product3').value;
+    p3 = parseFloat(product3);
+    calculate();
+
+}
+const addFunction4 = () => {
+    const product4 = document.getElementById('product4').value;
+    p4  = parseFloat(product4);
+    calculate();
+
+}
+const addFunction5 = () => {
+    const product5 = document.getElementById('product5').value;
+    p5 = parseFloat(product5);
+    console.log(p5)
+    calculate();
+
+}
+  const el1 = document.getElementById("product1")
+  el1.addEventListener("input", addFunction1 );
+  const el2 = document.getElementById("product2")
+  el2.addEventListener("input", addFunction2 );
+  const el3 = document.getElementById("product3")
+  el3.addEventListener("input", addFunction3 );
+  const el4 = document.getElementById("product4")
+  el4.addEventListener("input", addFunction4);
+  const el5 = document.getElementById("product5")
+  el5.addEventListener("input", addFunction5);
+
+</script>
+</body>
+</html>
